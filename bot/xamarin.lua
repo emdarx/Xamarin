@@ -250,7 +250,6 @@ function create_config( )
    "sendplug",
    "set",
    "setabout",
-   "social",
    "spam",
    "supergroup",
    "support",
