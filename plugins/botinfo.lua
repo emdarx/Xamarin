@@ -2,15 +2,17 @@ do
     function run(msg, matches)
         
   local text = [[
-🚀 Avira is best bot
+🚀 ربات ضد اسپم زامارین
 
-a Persian bot for Iranian 🇮🇷
+🔘 کاربردی ترین ربات مدیریت گروه
 
-Sudo : @mohammadarak
+ 🔸 مدیر ربات : @AmirDark 
+ 🔸 پشتیبانی : @SinaSereen
+ 🔸 کانال : @DarkTeam
 
-Bot id : https://telegram.me/avirabot
+🔷 نسخه ربات : 1.0.0 (سوپر گروه)
 
-http://s7.picofile.com/file/8246000950/Avira.jpg
+http://yeo.ir/XLO
 ]]
     return text
   end
@@ -22,7 +24,7 @@ return {
     "Show bot about.",
   },
   patterns = {
-    "^[!/]([Aa]vira)$",
+    "^[!/#]([Xx]amarin)$",
   }, 
   run = run,
 }
