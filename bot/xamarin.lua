@@ -275,7 +275,7 @@ function create_config( )
     help_text_realm = [[ ]],
     help_text = [[ ]],
 	help_text_super =[[
-📝 ليست دستورات مدیریت گروه :
+📝 ليست دستورات زامارین :
 
 🚫 حذف کردن کاربر
 !kick [یوزرنیم/یوزر آی دی]
@@ -325,6 +325,15 @@ function create_config( )
 🔓 باز کردن قفل اعضا ، نام گروه و ...
 !unlock [links|spam|Arabic|member|rtl|sticker|contacts|strict|fwd|reply]
 
+❌ بی صدا کردن یک حالت
+!mute [chat|audio|gifs|photo|video|service]
+
+✅ با صدا کردن یک حالت
+!unmute [chat|audio|gifs|photo|video|service]
+
+❌ حذف یک پیام توسط ریپلی
+!del
+
 📥 دريافت یوزر آی دی گروه يا کاربر
 !id
 
@@ -373,17 +382,18 @@ function create_config( )
 🚸 دريافت ليست کاربران بن شده
 !banlist
 
+👾 خاموش کردن ربات در گروه
 !bot off
-خاموش کردن ربات در گروه
 
+👾 روشن کردن ربات در گروه
 !bot on
-روشن کردن ربات در گروه
 
+📡 عضو شدن در گروه پشتیبانی ربات
 !join support
-عضو شدن در گروه پشتیبانی ربات
 
+🎯 دریافت راهنمای تفریحی
 !social
-دریافت راهنمای تفریحی
+
 ]],
   }
   serialize_to_file(config, './data/config.lua')
