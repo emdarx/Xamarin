@@ -221,7 +221,6 @@ function create_config( )
    "botinfo",
    "broadcast",
    "calc",
-   "cpu",
    "dad",
    "expire",
    "feedback",
