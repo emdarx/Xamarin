@@ -1,3 +1,6 @@
+--- https://github.com/amirhmz
+--- https://telegram.me/AmirDark
+
 local function get_hex(str)
   local colors = {
     red = "f00",
@@ -35,7 +38,7 @@ local function qr(receiver, text, color, bgcolor)
   local response, code, headers = http.request(url)
 
   if code ~= 200 then
-    return "خطا " .. code
+    return "Oops! Error: " .. code
   end
 
   if #response > 0 then
@@ -43,7 +46,7 @@ local function qr(receiver, text, color, bgcolor)
 	return
 
   end
-  return "خطا"
+  return "Oops! Something strange happened :("
 end
 
 local function run(msg, matches)
@@ -72,8 +75,11 @@ return {
       .."Or colors through decimals: (\"255-192-203\" is pink)"
   },
   patterns = {
-    '^!qr "(%w+)" "(%w+)" (.+)$',
-    "^!qr (.+)$"
+    '^[!/]qr "(%w+)" "(%w+)" (.+)$',
+    "^[!/]qr (.+)$"
   },
   run = run
 }
+
+--- https://github.com/amirhmz
+--- https://telegram.me/AmirDark
