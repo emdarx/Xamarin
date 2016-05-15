@@ -107,7 +107,7 @@ function Wikipedia:wikintro(text, lang)
       return text
     end
   else
-    return "🚫 مشکلی در ارتباط پیش آمد."
+    return "Sorry an error happened"
   end
 end
 
@@ -123,7 +123,7 @@ function Wikipedia:wikisearch(text, lang)
 	 titles = titles ~= "" and titles or "No results found"
 	 return titles
   else
-    return "🚫 مشکلی در ارتباط پیش آمد."
+    return "Sorry, an error occurred"
   end
 
 end
@@ -168,10 +168,10 @@ return {
   description = "Searches Wikipedia and send results",
   usage = wikiusage,
   patterns = {
-    "^![Ww]iki(%w+) (search) (.+)$",
-    "^![Ww]iki (search) ?(.*)$",
-    "^![Ww]iki(%w+) (.+)$",
-    "^![Ww]iki ?(.*)$"
+    "^[!/][Ww]iki(%w+) (search) (.+)$",
+    "^[!/][Ww]iki (search) ?(.*)$",
+    "^[!/][Ww]iki(%w+) (.+)$",
+    "^[!/][Ww]iki ?(.*)$"
   },
   run = run
-}
+  }
