@@ -250,7 +250,6 @@ function create_config( )
    "sendplug",
    "set",
    "setabout",
-   "spam",
    "supergroup",
    "support",
    "time",
@@ -259,7 +258,6 @@ function create_config( )
    "translate",
    "txt2sticker",
    "voice",
-   "vote",
    "weather",
    "wiki",
     },
@@ -458,6 +456,9 @@ function create_config( )
 
 🌅 دریافت اسکرین شات از یک سایت
 !webshot [آدرس سایت]
+
+🔤 ترجمه متن فارسی به انگلیسی
+!tr [متن]
 
 💎 دریافت اطلاعات ربات
 !xamarin
