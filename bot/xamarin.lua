@@ -250,6 +250,7 @@ function create_config( )
    "supergroup",
    "support",
    "time",
+   "music",
    "tophoto",
    "tosticker",
    "translate",
