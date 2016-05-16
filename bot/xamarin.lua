@@ -253,7 +253,7 @@ function create_config( )
    "tophoto",
    "tosticker",
    "translate",
-   "txt2sticker",
+   "txtsticker",
    "voice",
    "weather",
    "wiki",
