@@ -258,7 +258,6 @@ function create_config( )
    "voice",
    "weather",
    "wiki",
-   "write",
    "tools",
     },
     sudo_users = {119626024},--Sudo users
