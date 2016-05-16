@@ -47,7 +47,7 @@ local function pre_process(msg)
 	    enable_channel(receiver)
 	  end
 	end
-
+ 
   if is_channel_disabled(receiver) then
   	msg.text = "ربات روشن شد 🚀"
   end
