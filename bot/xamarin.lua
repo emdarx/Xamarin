@@ -234,7 +234,6 @@ function create_config( )
    "inrealm",
    "instagram",
    "invite",
-   "join",
    "leave_ban",
    "linkpv",
    "linkshorter",
