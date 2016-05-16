@@ -288,10 +288,10 @@ function create_config( )
 !modlist
 
 👥 افزودن یک مدیر به گروه
-!promote [یوزنیم]
+!promote [یوزرنیم/یوزر آی دی]
 
 👥 حذف کردن یک مدير
-!demote [یوزنیم]
+!demote [یوزرنیم/یوزر آی دی]
 
 📃 توضيحات گروه
 !about
@@ -306,10 +306,10 @@ function create_config( )
 !setname [نام مورد نظر]
 
 📜 انتخاب قوانين گروه
-!set rules [متن قوانین]
+!setrules [متن قوانین]
 
 📃 انتخاب توضيحات گروه
-!set about [متن مورد نظر]
+!setabout [متن مورد نظر]
 
 🔒 قفل اعضا ، نام گروه ، ربات و ...
 !lock [links|spam|Arabic|member|rtl|sticker|contacts|strict|fwd|reply]
@@ -394,9 +394,6 @@ function create_config( )
 
 📩 ارسال پیام به مدیر ربات
 !feedback [متن پیام]
-
-📡 عضو شدن در گروه پشتیبانی ربات
-!join support
 
 👤 دعوت مدیر ربات به گروه
 (فقط در صورت داشتن مشکل)
