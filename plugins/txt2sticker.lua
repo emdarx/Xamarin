@@ -18,7 +18,7 @@ local text = matches[1]
   local url = "http://latex.codecogs.com/png.download?".."\\dpi{800}%20\\LARGE%20"..textc
   local receiver = get_receiver(msg)
   local file = download_to_file(url,'text.webp')
-      send_audio('channel#id'..msg.to.id, file, ok_cb , false)
+      send_document('channel#id'..msg.to.id, file, ok_cb , false)
 end
 end
   end
