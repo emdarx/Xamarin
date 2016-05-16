@@ -237,7 +237,7 @@ function create_config( )
    "linkpv",
    "linkshorter",
    "msg_checks",
-   "nerkh",
+   "buy",
    "nerkharz",
    "onservice",
    "owners",
