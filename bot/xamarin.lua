@@ -207,7 +207,6 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-   "xamar", 	
    "active_user",
    "admin",
    "anti_fwd",
