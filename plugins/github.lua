@@ -5,10 +5,10 @@ local function run(msg, matches)
      jdat = JSON.decode(jstr)
   if jdat.message then
   return jdat.message
-  else
-     text = jdat.login..'\n❤️ فالورها : '..jdat.followers..'\n👥 فالوینگ ها : '..jdat.following..'\n🌐 آدرس پروفایل : '..jdat.html_url..'\n'
-  local file = download_to_file(jdat.avatar_url,'Avira.webp')
-  send_document('channel#id'..msg.to.id,file,ok_cb,false)
+else
+    text = '✏️ نام کاربر : '..jdat.name..'\n👤 نام کاربری : '..jdat.login..'\n❤️ فالورها : '..jdat.followers..'\n💙 فالوینگ ها : '..jdat.following..'\n📑 تعداد پروژه ها : '..jdat.public_repos..'\n🌐 لینک پروفایل : '..jdat.html_url..'\n'
+  local file = download_to_file(jdat.avatar_url,'github.png')
+  send_photo('channel#id'..msg.to.id,file,ok_cb,false)
   return text
 end
 end
@@ -20,3 +20,5 @@ return {
   },
   run = run
 }
+-- Created by : Amir Dark
+-- github.com/amirhmz
