@@ -244,8 +244,8 @@ end
 return {
     patterns = {
     "^[#!/](help)$",
-    "^[#!/](pmhelp)$",
-    "^[#!/](superhelp)$",
+  --  "^[#!/](pmhelp)$",
+ --   "^[#!/](superhelp)$",
     "^[#!/](kickme) (.*)$",
     "^!!tgservice (chat_add_user)$",
     },
