@@ -220,7 +220,6 @@ function create_config( )
    "botinfo",
    "broadcast",
    "calc",
-   "expire",
    "feedback",
    "filtering",
    "get",
