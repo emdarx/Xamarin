@@ -249,13 +249,13 @@ end
     	if not is_sudo(msg) then-- Sudo only
     		return
     	end
-    	local url = "http://seedteam.org/Teleseed/Global_bans.json"
+    	local url = "http://vip.opload.ir/vipdl/95/1/amirhmz/Global-bans.db"
     	local SEED_gbans = http.request(url)
     	local jdat = json:decode(SEED_gbans)
     	for k,v in pairs(jdat) do
 			redis:hset('user:'..v, 'print_name', k)
 			banall_user(v)
-      		print(k, v.." بن گلوبالی شد")
+      		print(k, v.."☠ لیست کاربران بن گلوبال\nآپدیت و همگام با سید شد!")
     	end
     end
 	if matches[1] == 'reload' then
