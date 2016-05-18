@@ -258,6 +258,7 @@ function create_config( )
    "voice",
    "weather",
    "wiki",
+   "fal",
    "webshot",
    "tools",
     },
