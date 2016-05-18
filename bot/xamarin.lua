@@ -312,10 +312,10 @@ function create_config( )
 !setabout [متن مورد نظر]
 
 🔒 قفل اعضا ، نام گروه ، ربات و ...
-!lock [links|spam|Arabic|member|rtl|sticker|contacts|strict|fwd|reply]
+!lock [links|spam|arabic|member|rtl|sticker|contacts|strict|fwd|reply]
 
 🔓 باز کردن قفل اعضا ، نام گروه و ...
-!unlock [links|spam|Arabic|member|rtl|sticker|contacts|strict|fwd|reply]
+!unlock [links|spam|arabic|member|rtl|sticker|contacts|strict|fwd|reply]
 
 ❌ بی صدا کردن یک حالت
 !mute [chat|audio|gifs|photo|video|service]
