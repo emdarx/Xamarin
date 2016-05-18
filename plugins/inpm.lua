@@ -1,4 +1,4 @@
-﻿local function pre_process(msg)
+local function pre_process(msg)
 local to = msg.to.type
 local service = msg.service
 	if to == 'user' and msg.fwd_from then
@@ -208,7 +208,7 @@ if to == 'user' or service or is_admin1(msg) and to == "chat" or to == "channel"
 
 	if matches[1] == 'help' and msg.to.type == 'user' or matches[1] == 'pmhelp' and is_admin1(msg) and msg.to.type ~= 'user' then
       	savelog(msg.to.id, name_log.." ["..msg.from.id.."] used pm help")
-	text = "فقط در سوپرگروها فعال است برای خرید گروه به آیدی @mohammadarak مراجعه کنید"
+	text = "❌ فقط در سوپر گروه ها فعال است.\n\nبرای خرید گروه ضد اسپم با زامارین\nبه آیدی @AmirDark پیام بدهیـد."
      	return text
     end
 
