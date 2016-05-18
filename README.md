@@ -24,8 +24,8 @@ chmod +x ./xamarin.sh
 ```
 
 # Contact Me
-| Bot | Channel | Telegram | Email |
+| Bot | Telegram Channel | Telegram Support | Email |
 |---------|--------|-------| ----- |
-| [Bot](https://telegram.me/XamarinTG) | [Join](https://telegram.me/DarkTeam) | [Developer](http://telegram.me/AmirDark) :trollface: | [Email](mailto:amdark77@gmail.com) 
+| [Bot](https://telegram.me/XamarinTG) | [Join](https://telegram.me/XamarinCH) | [AmirDark (Sudo)](http://telegram.me/AmirDark) :trollface: | [Email](mailto:amdark77@gmail.com) 
 
 # Enjoy it  ♥ 
