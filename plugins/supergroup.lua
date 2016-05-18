@@ -5,8 +5,8 @@ local function check_member_super(cb_extra, success, result)
   local data = cb_extra.data
   local msg = cb_extra.msg
   if success == 0 then
-	send_large_msg(receiver, "ابتدا من را در گروه مدیر کنید")
-  end
+  send_large_msg(receiver, "👮🏻 ابتدا من را در گروه مدیر کنید")
+end
   for k,v in pairs(result) do
     local member_id = v.peer_id
     if member_id ~= our_id then
@@ -39,8 +39,8 @@ local function check_member_super(cb_extra, success, result)
       end
       data[tostring(groups)][tostring(msg.to.id)] = msg.to.id
       save_data(_config.moderation.data, data)
-	  local text = 'سوپر گروه به لیست سوپرگروهای مدیریتی ربات اضافه شد'
-      return reply_msg(msg.id, text, ok_cb, false)
+	  local text = '✅ سوپر گروه به لیست گروه های\nتحت مدیریت ربات اضافه شد.'
+return reply_msg(msg.id, text, ok_cb, false)
     end
   end
 end
@@ -63,8 +63,8 @@ local function check_member_superrem(cb_extra, success, result)
       end
       data[tostring(groups)][tostring(msg.to.id)] = nil
       save_data(_config.moderation.data, data)
-	  local text = 'سوپرگروه از لیست سوپرگروه های مدیریتی ربات حذف شد'
-      return reply_msg(msg.id, text, ok_cb, false)
+	  local text = '🚫 سوپر گروه از لیست گروه های\nتحت مدیریت ربات حذف شد.'
+ return reply_msg(msg.id, text, ok_cb, false)
     end
   end
 end
@@ -555,8 +555,9 @@ end
 		end
 	end
   local settings = data[tostring(target)]['settings']
-  local text = "⚙ تنظیمات سوپرگروه :\n\n🔹 قفل لینک : "..settings.lock_link.."\n🔹 قفل فلود : "..settings.flood.."\n🔹 میزان حساسیت اسپم : "..NUM_MSG_MAX.."\n🔹 قفل اسپم : "..settings.lock_spam.."\n🔹 قفل عربی و فارسی : "..settings.lock_arabic.."\n🔹 قفل اعضا : "..settings.lock_member.."\n🔹 قفل کارکتر آر تی ال : "..settings.lock_rtl.."\n🔹 قفل استیکر : "..settings.lock_sticker.."\n🔹 عمومی بودن گروه : "..settings.public.."\n🔹 قفل تنظیمات سختگیرانه : "..settings.strict
-  return text
+  local text = "⚙ تنظیمات سوپر گروه :\n\n🔹 قفل لینک : "..settings.lock_link.."\n🔹 قفل فلود : "..settings.flood.."\n🔹 میزان حساسیت اسپم : "..NUM_MSG_MAX.."\n🔹 قفل اسپم : "..settings.lock_spam.."\n🔹 قفل عربی و فارسی : "..settings.lock_arabic.."\n🔹 قفل اعضا : "..settings.lock_member.."\n🔹 قفل کارکتر آر تی ال : "..settings.lock_rtl.."\n🔹 قفل استیکر : "..settings.lock_sticker.."\n🔹 عمومی بودن گروه : "..settings.public.."\n🔹 قفل تنظیمات سختگیرانه : "..settings.strict
+.."\nِ"
+return text
 end
 
 local function promote_admin(receiver, member_username, user_id)
@@ -2022,8 +2023,8 @@ return {
 	"^[#!/]([Mm]ove) (.*)$",
 	"^[#!/]([Oo]wner)$",
 	"^[#!/]([Mm]odlist)$",
-        "^[#!/]([Bb]lock) (.*)",
-	"^[#!/]([Bb]lock)",
+ --       "^[#!/]([Bb]lock) (.*)",
+--	"^[#!/]([Bb]lock)",
 	"^[#!/]([Tt]osuper)$",
 	"^[#!/]([Ii][Dd])$",
 	"^[#!/]([Ii][Dd]) (.*)$",
