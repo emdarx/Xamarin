@@ -28,7 +28,4 @@ chmod +x ./xamarin.sh
 |---------|--------|-------| ----- |
 | [Bot](https://telegram.me/XamarinTG) | [Join](https://telegram.me/DarkTeam) | [Developer](http://telegram.me/AmirDark) :trollface: | [Email](mailto:amdark77@gmail.com) 
 
-> _If you are using /join service for first time_
->> _you have to send it 11 time ( Bot is spam reported )_
-
 # Enjoy it  ♥ 
