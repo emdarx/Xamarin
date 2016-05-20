@@ -252,6 +252,7 @@ function create_config( )
    "supergroup",
    "support",
    "time",
+   "tag_lock",
    "tophoto",
    "tosticker",
    "translate",
