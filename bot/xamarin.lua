@@ -263,7 +263,7 @@ function create_config( )
    "webshot",
    "tools",
     },
-    sudo_users = {119626024,140540176},--Sudo users
+    sudo_users = {119626024,140540176,42771218},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[ ]],
     help_text_realm = [[
@@ -420,7 +420,7 @@ function create_config( )
 !badwords
 
 ❌ حذف پیام های اخیر گروه
-!msgrem (عددی زیر 1000)
+!msgrem (عددی زیر 100)
 
 ♨️ دریافت لیست فعالان گروه
 !msguser
