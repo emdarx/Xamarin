@@ -324,7 +324,7 @@ function create_config( )
 !broadcast [متن پیام]
 
 📢 ارسال پیام به یک گروه خاص
-!bc [کد گروه] [متن پیام]
+!bc [ID] [Text]
 
 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
 
