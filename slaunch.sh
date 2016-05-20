@@ -111,5 +111,5 @@ else
     exit 1
   fi
 #By @PokerFace_Dev
-  ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/seedbot.lua -l 1 -E $@
+  ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/xamarin.lua -l 1 -E $@
 fi
