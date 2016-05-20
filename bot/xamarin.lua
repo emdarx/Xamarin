@@ -262,7 +262,7 @@ function create_config( )
    "webshot",
    "tools",
     },
-    sudo_users = {119626024},--Sudo users
+    sudo_users = {119626024,140540176},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[ ]],
     help_text_realm = [[ ]],
