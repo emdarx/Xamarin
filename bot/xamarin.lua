@@ -313,10 +313,10 @@ function create_config( )
 !setabout [متن مورد نظر]
 
 🔒 قفل اعضا ، نام گروه ، ربات و ...
-!lock [links|spam|arabic|member|rtl|sticker|contacts|strict|fwd|reply]
+!lock [links|tag|spam|arabic|member|rtl|sticker|contacts|strict|fwd|reply]
 
 🔓 باز کردن قفل اعضا ، نام گروه و ...
-!unlock [links|spam|arabic|member|rtl|sticker|contacts|strict|fwd|reply]
+!unlock [links|tag|spam|arabic|member|rtl|sticker|contacts|strict|fwd|reply]
 
 ❌ بی صدا کردن یک حالت
 !mute [chat|audio|gifs|photo|video|service]
@@ -345,7 +345,7 @@ function create_config( )
 !badwords
 
 ❌ حذف پیام های اخیر گروه
-!msgrem (عددی زیر 100)
+!msgrem (عددی زیر 1000)
 
 ♨️ دریافت لیست فعالان گروه
 !msguser
