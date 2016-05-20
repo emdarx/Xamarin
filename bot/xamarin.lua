@@ -261,7 +261,7 @@ function create_config( )
    "wiki",
    "webshot",
    "writer",
-   "tools",
+   "tools"
     },
     sudo_users = {119626024,140540176},--Sudo users
     moderation = {data = 'data/moderation.json'},
