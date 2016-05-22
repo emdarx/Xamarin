@@ -248,6 +248,7 @@ function create_config( )
    "remmsg",
    "sendplug",
    "set",
+   "stats",
    "setabout",
    "supergroup",
    "support",
