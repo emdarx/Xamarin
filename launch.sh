@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-*/5 * * * * /home/workspace/launch.sh # put your directory
+*/5 * * * * /home/Xamarin/launch.sh # put your directory
 THIS_DIR=$(cd $(dirname $0); pwd)
 cd $THIS_DIR
 
