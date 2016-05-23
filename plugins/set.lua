@@ -8,8 +8,8 @@ local function save_value(msg, name, value)
   end
   if hash then
     redis:hset(hash, name, value)
-    return "دخیره شد"..name
-  end
+    return " ذخیره شد " ..name
+    end
 end
 local function run(msg, matches)
   if not is_momod(msg) then
@@ -25,7 +25,7 @@ end
 
 return {
   patterns = {
-   "^[#!/]save ([^%s]+) (.+)$"
+   "^[#!/]set ([^%s]+) (.+)$"
   }, 
   run = run 
 }
