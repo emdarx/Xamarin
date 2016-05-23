@@ -247,6 +247,7 @@ function create_config( )
    "qr",
    "remmsg",
    "sendplug",
+   "sendfile",
    "set",
    "stats",
    "setabout",
