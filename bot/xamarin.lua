@@ -135,7 +135,7 @@ local function is_plugin_disabled_on_chat(plugin_name, receiver)
     -- Checks if plugin is disabled on this chat
     for disabled_plugin,disabled in pairs(disabled_chats[receiver]) do
       if disabled_plugin == plugin_name and disabled then
-        local warning = 'Plugin '..disabled_plugin..' is disabled on this chat'
+        local warning = 'پلاگین '..disabled_plugin..' در این گروه غیر فعال است.'
         print(warning)
         send_msg(receiver, warning, ok_cb, false)
         return true
