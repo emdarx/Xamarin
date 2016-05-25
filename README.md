@@ -19,6 +19,8 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 cd $HOME
 git clone https://github.com/amirhmz/Xamarin.git -b supergroups
 cd Xamarin
+git clone *آدرس گیت پلاگین ها*
+mv *نام پوشه کلون شده* Plugins
 chmod +x ./launch.sh
 ./launch.sh install
 ./launch.sh # سپس شماره تلگرام و کد تایید را وارد میکنیم
