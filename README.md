@@ -4,7 +4,9 @@
 <p align="center">Created By ♥ In Iran
 ***
 
-**A Telegram Bot based on plugins using [tg](https://github.com/vysheng/tg) **
+** توجه : این سورس رایگان نمیباشد **
+** برای دریافت پلاگین های این سورس به آی دی تلگرام سازنده پیام بدهید!**
+
 
 ## Installation
 
