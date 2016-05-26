@@ -1172,7 +1172,7 @@ function ban_by_reply(extra, success, result)
 		return "شما نمی توانید مدیران را اخراج کنید"
 	end
 		ban_user(result.from.peer_id, result.to.peer_id)
-		send_large_msg(chat, "کاربر "..result.from.peer_id.." بن شد")
+		send_large_msg(chat, "کاربر "..result.from.peer_id.." بن شد.")
 	else
 		return
 	end
@@ -1190,8 +1190,8 @@ function ban_by_reply_admins(extra, success, result)
 		return
     end
 		ban_user(result.from.peer_id, result.to.peer_id)
-		send_large_msg(chat, "کاربر "..result.from.peer_id.." بن شد")
-		send_large_msg(channel, "کاربر "..result.from.peer_id.." بن شد")
+		send_large_msg(chat, "کاربر "..result.from.peer_id.." بن شد.")
+		send_large_msg(channel, "کاربر "..result.from.peer_id.." بن شد.")
 	else
 		return
 	end
@@ -1205,7 +1205,7 @@ function unban_by_reply(extra, success, result)
 	if tonumber(result.from.peer_id) == tonumber(our_id) then -- Ignore bot
 		return
 	end
-		send_large_msg(chat, "کاربر "..result.from.peer_id.." آنبن شد")
+		send_large_msg(chat, "کاربر "..result.from.peer_id.." آنبن شد.")
     -- Save on redis
 		local hash =  'banned:'..result.to.peer_id
 		redis:srem(hash, result.from.peer_id)
@@ -1226,7 +1226,7 @@ function banall_by_reply(extra, success, result)
 		local name = user_print_name(result.from)
 		banall_user(result.from.peer_id)
 		chat_del_user(chat, 'user#id'..result.from.peer_id, ok_cb, false)
-		send_large_msg(chat, "کاربر "..name.."["..result.from.peer_id.."] بن گلوبالی شد")
+		send_large_msg(chat, "کاربر "..name.."["..result.from.peer_id.."] بن گلوبالی شد.")
 	else
 		return
   end
