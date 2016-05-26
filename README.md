@@ -1,8 +1,7 @@
 ***
-# <p align="center">Xamarin (Zamarin) For Super Groups
-####<p align="center">**The Pro Telegram Group Manager**
-<p align="center">Created By ♥ In Iran
-***
+# <p align="center">زامارین : سوپر گروه
+####<p align="center">**ربات مدیریت حرفه ای و آسان گروه**
+<p align="center">ساخته شده با ♥ در ایران
 
 ####<p align="center">**!توجه : این سورس رایگان نمیباشد ، برای دریافت و خرید پلاگین های اضافه به آی دی تلگرام سازنده پیام بدهید**
 ***
