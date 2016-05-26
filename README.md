@@ -17,7 +17,7 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 cd $HOME
 git clone https://github.com/amirhmz/Xamarin.git -b supergroups
 cd Xamarin
-git clone *آدرس گیت پلاگین ها*
+git clone آدرس گیت پلاگین ها # برای دریافت این آدرس باید سورس را از پشتیبانی ربات خریداری نمایید!
 mv *نام پوشه کلون شده* plugins
 chmod +x ./launch.sh
 ./launch.sh install
