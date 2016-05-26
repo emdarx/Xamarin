@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-*/5 * * * * /home/root/Xamarin/launch.sh # put your directory
+
 THIS_DIR=$(cd $(dirname $0); pwd)
 cd $THIS_DIR
 
@@ -110,6 +110,8 @@ else
     echo "Run $0 install"
     exit 1
   fi
-
-  ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/xamarin.lua -l 1 -E $@
+  while true; do
+   ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/xamarin.lua -l 1 -E $@
+   sleep 10
+  done
 fi
