@@ -110,6 +110,6 @@ else
     echo "Run $0 install"
     exit 1
   fi
-#By @PokerFace_Dev
+
   ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/xamarin.lua -l 1 -E $@
 fi
