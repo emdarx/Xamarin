@@ -7,7 +7,6 @@
 ***
 ####<p align="right">**: راهنمای نصب**
 
-
 ```bash
 # ابتدا با کد زیر بسته پیش نیاز زبان برنامه نویسی لوآ را نصب میکنیم
 sudo apt-get update
@@ -25,10 +24,10 @@ chmod +x ./launch.sh
 ./launch.sh install
 ./launch.sh # سپس شماره تلگرام و کد تایید را وارد میکنیم
 ```
-
-# Contact Me
+***
+####<p align="right">**: ارتباط با ما**
 | Bot | Telegram Channel | Telegram Support | Email |
 |---------|--------|-------| ----- |
 | [Bot](https://telegram.me/XamarinTG) | [Join](https://telegram.me/XamarinCH) | [AmirDark (Sudo)](http://telegram.me/AmirDark) :trollface: | [Email](mailto:amdark77@gmail.com) 
 
-# Enjoy it  ♥ 
+# لذت ببرید! ♥
