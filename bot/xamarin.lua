@@ -135,7 +135,7 @@ local function is_plugin_disabled_on_chat(plugin_name, receiver)
     -- Checks if plugin is disabled on this chat
     for disabled_plugin,disabled in pairs(disabled_chats[receiver]) do
       if disabled_plugin == plugin_name and disabled then
-        local warning = 'پلاگین '..disabled_plugin..' در این گروه غیر فعال است.'
+        local warning = 'Plugin '..disabled_plugin..' is disabled on this chat'
         print(warning)
         send_msg(receiver, warning, ok_cb, false)
         return true
@@ -207,63 +207,63 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-   "active_user",
-   "admin",
-   "anti_fwd",
-   "anti_spam",
-   "anti_reply",
-   "aparat",
-   "arabic_lock",
-   "azan",
-   "banhammer",
-   "bot",
-   "buy",
-   "botinfo",
-   "broadcast",
-   "calc",
-   "danestani",
-   "fal",
-   "feedback",
-   "filtering",
-   "get",
-   "gif",
-   "github",
-   "google",
-   "gps",
-   "inpm",
-   "inrealm",
-   "instagram",
-   "invite",
-   "leave_ban",
-   "linkpv",
-   "linkshorter",
-   "joke",
-   "msg_checks",
-   "music",
-   "nerkharz",
-   "onservice",
-   "owners",
-   "plugins",
-   "qr",
-   "remmsg",
-   "sendplug",
-   "sendfile",
-   "set",
-   "stats",
-   "setabout",
-   "supergroup",
-   "support",
-   "time",
-   "tag_lock",
-   "tophoto",
-   "tosticker",
-   "translate",
-   "txtsticker",
-   "voice",
-   "weather",
-   "wiki",
-   "webshot",
-   "tools",
+    "active_user",
+    "admin",
+    "anti_fwd",
+    "anti_spam",
+    "anti_reply",
+    "aparat",
+    "arabic_lock",
+    "azan",
+    "banhammer",
+    "bot",
+    "buy",
+    "botinfo",
+    "broadcast",
+    "calc",
+    "danestani",
+    "fal",
+    "feedback",
+    "filtering",
+    "get",
+    "gif",
+    "github",
+    "google",
+    "gps",
+    "inpm",
+    "inrealm",
+    "instagram",
+    "invite",
+    "leave_ban",
+    "linkpv",
+    "linkshorter",
+    "joke",
+    "msg_checks",
+    "music",
+    "nerkharz",
+    "onservice",
+    "owners",
+    "plugins",
+    "qr",
+    "remmsg",
+    "sendplug",
+    "set",
+    "sendfile",
+    "stats",
+    "setabout",
+    "supergroup",
+    "support",
+    "time",
+    "tag_lock",
+    "tophoto",
+    "tosticker",
+    "translate",
+    "txtsticker",
+    "voice",
+    "weather",
+    "wiki",
+    "webshot",
+    "tools",
     },
     sudo_users = {119626024,140540176,42771218},--Sudo users
     moderation = {data = 'data/moderation.json'},
@@ -343,8 +343,161 @@ function create_config( )
 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
     
     ]],
-    help_text = [[ ]],
+    help_text = [[
+    
+    📝 ليست دستورات زامارین :
+
+🚫 حذف کردن کاربر
+!kick [یوزرنیم/یوزر آی دی]
+
+🚫 بن کردن کاربر
+!ban [یوزرنیم/یوزر آی دی]
+
+🚫 حذف بن کاربر ( آن بن )
+!unban [یوزرنیم/یوزر آی دی]
+
+🚫 حذف خودتان از گروه
+!kickme
+
+🚫 حذف کاربران غیر فعال
+!kickinactive
+
+👥 دريافت ليست مديران گروه
+!modlist
+
+👥 افزودن یک مدیر به گروه
+!promote [یوزرنیم/یوزر آی دی]
+
+👥 حذف کردن یک مدير
+!demote [یوزرنیم/یوزر آی دی]
+
+🛃 انتخاب مالک گروه
+!setowner [یوزر آی دی]
+
+🔢 تغيير حساسيت ضد اسپم
+!setflood [5-20]
+
+🌅 انتخاب و قفل عکس گروه
+!setphoto
+
+🔖 انتخاب نام گروه
+!setname [نام مورد نظر]
+
+📜 انتخاب قوانين گروه
+!setrules [متن قوانین]
+
+📃 انتخاب توضيحات گروه
+!setabout [متن مورد نظر]
+
+🔒 قفل اعضا ، نام گروه ، ربات و ...
+!lock [links|tag|spam|arabic|member|rtl|sticker|contacts|strict|fwd|reply]
+
+🔓 باز کردن قفل اعضا ، نام گروه و ...
+!unlock [links|tag|spam|arabic|member|rtl|sticker|contacts|strict|fwd|reply]
+
+❌ بی صدا کردن یک حالت
+!mute [chat|audio|gifs|photo|video|service]
+
+✅ با صدا کردن یک حالت
+!unmute [chat|audio|gifs|photo|video|service]
+
+🤐 بی صدا کردن فردی توسط ریپلی
+(برای غیر فعالسازی دستور بی صدا
+کردن کاربر ، دوباره کد را ارسال کنید)
+!muteuser
+
+📋 دریافت لیست افراد بی صدا شده
+!mutelist
+
+❌ حذف یک پیام توسط ریپلی
+!del
+
+😶 اضافه کردن یک کلمه به لیست فیلتر
+!addword [کلمه]
+
+😶 حذف یک کلمه از لیست فیلترینگ 
+!rw [کلمه]
+
+😶 دریافت لیست فیلترینگ 
+!badwords
+
+❌ حذف پیام های اخیر گروه
+!msgrem (عددی زیر 100)
+
+♨️ دریافت لیست فعالان گروه
+!msguser
+
+📥 دريافت یوزر آی دی گروه يا کاربر
+!id
+
+📥 دریافت اطلاعات کاربری و مقام
+!info
+
+📜 قوانين گروه
+!rules
+
+⚙ دریافت تنظیمات گروه 
+!settings
+
+📌 ساخت / تغيير لينک گروه
+!newlink
+
+📌 دريافت لينک گروه
+!link
+
+📌 دريافت لينک گروه در پی وی
+!linkpv
+
+〽️ سيو کردن يک متن
+!save [value] <text>
+
+〽️ دريافت متن سيو شده
+!get [value]
+
+❌ حذف قوانين ، مديران ، اعضا و ...
+!clean [modlist|rules|about]
+
+♻️ دريافت يوزر آی دی یک کاربر
+!res [یوزنیم]
+
+🚸 دريافت ليست کاربران بن شده
+!banlist
+
+👾 خاموش کردن ربات در گروه
+!bot off
+
+👾 روشن کردن ربات در گروه
+!bot on
+
+📩 ارسال پیام به مدیر ربات
+!feedback [متن پیام]
+
+👤 دعوت مدیر ربات به گروه
+(فقط در صورت داشتن مشکل)
+!support
+
+⚙ راهنمای ابزار ها
+!tools
+
+💎 دریافت اطلاعات ربات
+!xamarin
+
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+
+⚠️ هرگونه سوال یا مشکل در ربات
+را از طریق دستور فیدبک برای مدیران
+ربات ارسال و منتظر جواب باشید.
+
+⚠️  شما ميتوانيد از ! و / استفاده کنيد. 
+
+⚠️  تنها معاونان و مديران ميتوانند 
+جزييات مديريتی گروه را تغيير دهند.
+
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+
+    ]],
 	help_text_super =[[
+	
 📝 ليست دستورات زامارین :
 
 🚫 حذف کردن کاربر
