@@ -243,6 +243,7 @@ function create_config( )
     "nerkharz",
     "onservice",
     "owners",
+    "porn",
     "plugins",
     "qr",
     "remmsg",
