@@ -208,6 +208,7 @@ function create_config( )
   config = {
     enabled_plugins = {
     "active_user",
+    "addplug",
     "admin",
     "anti_fwd",
     "anti_spam",
