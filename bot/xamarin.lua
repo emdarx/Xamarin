@@ -422,13 +422,16 @@ function create_config( )
 !del
 
 😶 اضافه کردن یک کلمه به لیست فیلتر
-!addword [کلمه]
+!addfilter [کلمه]
 
 😶 حذف یک کلمه از لیست فیلترینگ 
-!remword [کلمه]
+!remfilter [کلمه]
+
+😶 حذف تمام کلمات فیلترینگ
+!clearfilter
 
 😶 دریافت لیست فیلترینگ 
-!badwords
+!filterlist
 
 ❌ حذف پیام های اخیر گروه
 !msgrem (عددی زیر 100)
