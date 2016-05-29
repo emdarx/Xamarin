@@ -222,6 +222,7 @@ function create_config( )
     "botinfo",
     "broadcast",
     "calc",
+    "channel_inline",
     "danestani",
     "fal",
     "feedback",
