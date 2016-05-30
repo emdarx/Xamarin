@@ -449,6 +449,9 @@ function create_config( )
 📜 قوانين گروه
 !rules
 
+🌎 تعیین عمومی بودن یا نبودن گروه
+!public [yes/no]
+
 ⚙ دریافت تنظیمات گروه 
 !settings
 
