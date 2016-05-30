@@ -400,16 +400,16 @@ function create_config( )
 !setabout [متن مورد نظر]
 
 🔒 قفل اعضا ، نام گروه ، ربات و ...
-!lock [links|tag|spam|arabic|member|rtl|sticker|contacts|strict|fwd|reply]
+!lock [links|tag|spam|arabic|member|sticker|contacts|fwd|reply]
 
 🔓 باز کردن قفل اعضا ، نام گروه و ...
-!unlock [links|tag|spam|arabic|member|rtl|sticker|contacts|strict|fwd|reply]
+!unlock [links|tag|spam|arabic|member|sticker|contacts|fwd|reply]
 
 ❌ بی صدا کردن یک حالت
-!mute [chat|audio|gifs|photo|video|service]
+!mute [chat|audio|gifs|photo|video]
 
 ✅ با صدا کردن یک حالت
-!unmute [chat|audio|gifs|photo|video|service]
+!unmute [chat|audio|gifs|photo|video]
 
 🤐 بی صدا کردن فردی توسط ریپلی
 (برای غیر فعالسازی دستور بی صدا
