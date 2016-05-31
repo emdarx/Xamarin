@@ -15,12 +15,13 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 ```bash
 # را نصب و اجرا میکنیم Bot سپس
 cd $HOME
-git clone https://github.com/amirhmz/Xamarin.git -b supergroups
+git clone https://github.com/amirhmz/Xamarin.git
 cd Xamarin
 git clone *آدرس گیت پلاگین ها*
 # برای دریافت آدرس گیت پلاگین ها باید سورس را از توسعه دهندگان آن خریداری نمایید!
 mv *نام پوشه کلون شده* plugins
 chmod +x ./launch.sh
+chmod +x ./kill.sh
 ./launch.sh install
 ./launch.sh # سپس شماره تلگرام و کد تایید را وارد میکنیم
 ```
