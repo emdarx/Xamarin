@@ -31,6 +31,6 @@ chmod +x ./kill.sh
 ####<p align="right">**: ارتباط با ما**
 | Bot | Telegram Channel | Telegram Support | Email |
 |---------|--------|-------| ----- |
-| [Bot](https://telegram.me/XAMARlN) | [Join](https://telegram.me/XamarinCH) | [AmirDark (Sudo)](http://telegram.me/AmirDark) :trollface: | [Email](mailto:amdark77@gmail.com) 
+| [Bot](https://telegram.me/XAMARlN) | [Join](https://telegram.me/HaxTeam) | [AmirDark (Sudo)](http://telegram.me/AmirDark) :trollface: | [Email](mailto:amdark77@gmail.com) 
 
 ####<p align="center">**♥ !لذت ببرید**
