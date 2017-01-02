@@ -233,9 +233,7 @@ function create_config( )
     "feedback",
     "filtering",
     "get",
-    "gif",
     "github",
-    "google",
     "gps",
     "inpm",
     "inrealm",
@@ -246,7 +244,6 @@ function create_config( )
     "linkshorter",
     "joke",
     "msg_checks",
-    "music",
     "nerkharz",
     "onservice",
     "owners",
@@ -273,7 +270,7 @@ function create_config( )
     "webshot",
     "tools",
     },
-    sudo_users = {119626024,100665025,0,tonumber(our_id)},--Sudo users
+    sudo_users = {119626024,100665025,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[ ]],
     help_text_realm = [[
