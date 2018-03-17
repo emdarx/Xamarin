@@ -25,6 +25,13 @@ chmod +x ./kill.sh
 ./launch.sh install
 ./launch.sh # سپس شماره تلگرام و کد تایید را وارد میکنیم
 ```
+```bash
+# حالا اجرای خودکار را فعال میکنیم
+cd Xamarin
+chmod 777 autolaunch.sh
+screen ./autolaunch.sh
+```
+
 
 ***
 
