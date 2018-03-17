@@ -270,7 +270,7 @@ function create_config( )
     "webshot",
     "tools",
     },
-    sudo_users = {119626024,100665025,tonumber(our_id)},--Sudo users
+    sudo_users = {119626024,100665025,227843479,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[ ]],
     help_text_realm = [[
